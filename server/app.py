@@ -10,6 +10,7 @@ def index():
 
 @app.route('/print/<string:parameter>')
 def print_string(parameter):
+    print(parameter)
     return f'{parameter}'
 
 @app.route('/count/<int:parameter>')
